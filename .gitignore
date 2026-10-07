@@ -1,0 +1,8 @@
+build/
+sdkconfig.old
+.DS_Store
+.cache/
+firmware/*/build/
+firmware/*/sdkconfig
+firmware/*/managed_components/
+firmware/*/dependencies.lock

@@ -1,0 +1,29 @@
+name: Bug report
+description: Something does not work as described
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Sampan version
+      description: From the status line (sampan-recv prints it) or the build you flashed
+    validations:
+      required: true
+  - type: input
+    id: board
+    attributes:
+      label: Board
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: Status line
+      description: Paste a line from sampan-recv if you can
+      render: text
